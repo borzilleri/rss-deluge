@@ -9,8 +9,9 @@ from dateutil.parser import parse
 from deluge_client import DelugeRPCClient
 
 
-CONFIG_FILE = "config.json"
-STATUS_FILE = "status.json"
+BASEDIR = os.path.dirname(os.path.realpath(__file__))
+CONFIG_FILE = os.path.join(BASEDIR, "config.json")
+STATUS_FILE = os.path.join(BASEDIR, "status.json")
 CONFIG = json.load(open(CONFIG_FILE, 'r'))
 
 client = DelugeRPCClient(CONFIG['deluge']['host'], CONFIG['deluge']['port'],
