@@ -1,0 +1,9 @@
+[Unit]
+Description=Parses RSS Feed for Torrents
+
+[Service]
+Type=simple
+User=jonathan
+Group=jonathan
+WorkingDirectory=/opt/rss-deluge
+ExecStart=/opt/rss-deluge/env/bin/python /opt/rss-deluge/rss-deluge.py

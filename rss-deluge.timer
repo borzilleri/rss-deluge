@@ -1,0 +1,6 @@
+[Unit]
+Description=Runs File Renamer on a timer
+
+[Timer]
+OnCalendar=*-*-* 0,6,12,18:00:00
+Unit=rss-deluge.service
