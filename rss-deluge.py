@@ -18,7 +18,7 @@ client = DelugeRPCClient(
     CONFIG["deluge"]["host"],
     CONFIG["deluge"]["port"],
     CONFIG["deluge"]["user"],
-    CONFIG["deluge"]["pass"],
+    CONFIG["deluge"]["password"],
 )
 client.connect()
 

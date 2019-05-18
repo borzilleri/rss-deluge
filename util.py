@@ -12,7 +12,7 @@ def json_deserialize(pairs):
     """Load with dates"""
     d = {}
     for k, v in pairs:
-        if isinstance(v, basestring):
+        if isinstance(v, str):
             try:
                 d[k] = parser.parse(v)
             except ValueError:
